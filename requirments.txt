@@ -1,5 +1,7 @@
-rapidfuzz
-difflib
-pytest
 fastapi
+uvicorn
+google-genai
+python-dotenv
 requests
+pydantic
+rapidfuzz

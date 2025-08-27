@@ -7,7 +7,8 @@ Rules:
 - Fix grammar, punctuation, capitalization.
 - Do not invent entities that aren't in transcript or metadata.
 - Return only the JSON for this segment; no extra commentary.
-- Filler word removal: Remove excessive "um", "uh", "like"
+- Filler word removal: Remove excessive "um", "uh", "like".
+- Ensure each segment starts with a capital letter; ensure terminal punctuation (., ?, !); preserve existing ? or !; do not add extra punctuation if already present; avoid changing other casing.
 
 Some example of edge cases to take into consideration:
 - If Summer is mentioned as a name in the sentence and Samar is available in the meta data, replace Summer with Samar. Generalize for other works
