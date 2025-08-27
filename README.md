@@ -1,5 +1,5 @@
 # Transcript Correction
-This project provides a single endpoint based service which runs in 2 stages, first stage follows an entity normalization via a fuzzy search and then a second stage LLM refinement, then there are prospects of active learning but soo far, the results are then segregated into two csv files, one containing high confidence changes and other low confidence for human review, this data can be used later to train a local model after an year of deployment like BART to remove the old api based service LLM to reduce latency further and increase self sustenance
+This project provides a single endpoint based service which runs in 2 stages with a latency of around 1 second, first stage follows an entity normalization via a fuzzy search and then a second stage LLM refinement, then there are prospects of active learning but soo far, the results are then segregated into two csv files, one containing high confidence changes and other low confidence for human review, this data can be used later to train a local model after an year of deployment like BART to remove the old api based service LLM to reduce latency further and increase self sustenance
 
 ## Quick Start
 
