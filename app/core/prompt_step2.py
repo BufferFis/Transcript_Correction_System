@@ -1,4 +1,3 @@
-# app/core/prompt_phase2.py
 import json
 
 SYSTEM_INSTRUCTION = """You correct sales transcripts using provided metadata and Stage-1 changes.
