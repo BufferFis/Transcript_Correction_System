@@ -18,77 +18,41 @@ This project provides a single endpoint based service which runs in 2 stages, fi
 
 ```
 transcript_enhancer/
-
 ├── __pycache__/
-
 ├── .env
-
 ├── .env.example # Store all the configs here
-
 ├── .gitignore
-
 ├── LICENSE
-
 ├── README.md
-
 ├── app/
-
 │ ├── __init__.py
-
 │ ├── api/
-
 │ │ ├── __init__.py
-
 │ │ ├── grammar_routes.py # Route to the Gemini API for grammer correction
-
 │ │ ├── pipeline_routes.py # Route to Endpoint for full pipeline
-
 │ │ └── routes.py # Route to Fuzzy Search
-
 │ ├── core/
-
 │ │ ├── __init__.py
-
 │ │ ├── csv_store.py # Stores CSV for human in the loop(Accepted/Not Acc.)
-
 │ │ ├── fuzzy_matcher.py # Fuzzy match algorithm
-
 │ │ ├── gemini_client.py # Gemini client to invoke the LLM
-
 │ │ ├── prompt_step2.py # Creates the prompt which will be taken in by LLM
-
 │ │ └── step2_orchestrator.py # Uses LLM on the output of Fuzzy match
-
 │ ├── models/
-
 │ │ ├── __init__.py
-
 │ │ ├── schemas.py # Pydantic models for step1
-
 │ │ └── schemas_step2.py # Pydantic models for step2
-
 │ ├── utils/ # Future use
-
 │ │ ├── __init__.py
-
 ├── hitl_accepted.csv # Accepted captions
-
 ├── hitl_reviews.csv # Marked captions
-
 ├── main.py # Fast API entery point
-
 ├── requirements.txt
-
 ├── scripts/
-
 │ ├── eval_results.csv # Evaluation results
-
 │ └── evaluate_pipeline.py # Evaluate the entire pipeline
-
 └── tests/
-
 ├── __init__.py
-
 └── test_pipeline.py # Test pipeline on some results
 
 ```
