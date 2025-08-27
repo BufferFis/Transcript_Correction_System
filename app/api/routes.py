@@ -5,7 +5,7 @@ from app.core.fuzzy_matcher import correct_transcript_segment
 
 router = APIRouter()
 
-@router.post("/entities", response_model=CorrectionResponse)
+@router.post("/step1", response_model=CorrectionResponse)
 def correct_entities(req: CorrectionRequest):
     corrected: List[Dict[str, Any]] = []
     changes_all: List[List[Dict[str, any]]] = []

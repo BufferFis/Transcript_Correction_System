@@ -81,7 +81,8 @@ def build_canonicals(metadata: Dict[str, Any]) -> Dict[str, str]:
 def correct_transcript_segment(segment: Dict[str, Any],
                                metadata: Dict[str, Any],
                                add_terminal_period: bool = False,
-                               threshold: float = 80.0) -> Dict[str, Any]:
+                               threshold: float = 80.0
+                            ) -> Dict[str, Any]:
     
     """
     Token level matching against metadata strings.

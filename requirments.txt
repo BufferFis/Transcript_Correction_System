@@ -1,3 +1,5 @@
 rapidfuzz
 difflib
 pytest
+fastapi
+requests
